@@ -1,0 +1,24 @@
+$brand-color:#30AE63;
+@mixin resets($parameter)
+{
+	  -webkit-resets: $parameter;
+      -moz-resets: $parameter;
+      -ms-resets: $parameter;
+	   resets:$parameter;
+}
+body
+{
+	@include resets(none);
+}
+.application
+{
+	width: 80%;
+	position: relative;
+	
+}
+.applicaton__left-side,.application__right-side
+{
+	display: inline-block;
+	width: 100%;
+	background-color:$brand-color;
+}
