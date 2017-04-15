@@ -46,7 +46,8 @@ body
 .application
 {
 	display: inline-block;
-	width: 80%;
+	display: none;
+	min-width: 600px;
 	text-align: left;	
 }
 .application__left-side, .application__right-side
@@ -56,7 +57,7 @@ body
 	width: 50%;	
 	margin-right: -.25em;
 	background-color:$brand-color;
-	min-height: 450px;
+	height: 550px;
 	vertical-align: top;
 }
 .application__left-side
@@ -128,7 +129,7 @@ body
 	color: dimgray;
 	margin-top: 5%;
 }
-.application__button
+.button
 {
 	@include data-fields();
 	border-style: none;
@@ -137,3 +138,4 @@ body
 	margin-top: 10%;
 }
 @import 'header.scss';
+@import 'footer.scss';

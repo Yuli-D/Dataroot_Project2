@@ -17,7 +17,8 @@ body {
 
 .application {
   display: inline-block;
-  width: 80%;
+  display: none;
+  min-width: 600px;
   text-align: left; }
 
 .application__left-side, .application__right-side {
@@ -26,7 +27,7 @@ body {
   width: 50%;
   margin-right: -.25em;
   background-color: #30AE63;
-  min-height: 450px;
+  height: 550px;
   vertical-align: top; }
 
 .application__left-side {
@@ -103,7 +104,7 @@ body {
   color: dimgray;
   margin-top: 5%; }
 
-.application__button {
+.button {
   display: inline-block;
   width: 100%;
   margin-top: 2%;
@@ -198,3 +199,75 @@ body {
 .menu__item:first-child {
   border-bottom: 2px solid white;
   margin: 0; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  display: inline-block;
+  min-width: 890px;
+  text-align: center; }
+
+.footer {
+  margin: 0 auto;
+  min-width: 890px;
+  position: relative;
+  margin: 0 auto;
+  display: inline-block;
+  text-align: center; }
+
+.footer__link {
+  text-decoration: none;
+  color: black; }
+
+.footer__menu {
+  display: inline-block;
+  width: 20%;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  list-style: none;
+  vertical-align: top;
+  position: relative; }
+
+.footer__item {
+  padding: 5%; }
+
+.footer__item:first-child {
+  font-weight: bold; }
+
+.footer__link {
+  padding-right: 5%; }
+
+.footer__detais {
+  font-size: 80%; }
+
+.footer__button {
+  padding: 5%;
+  width: 80%;
+  margin: 0;
+  z-index: 10;
+  position: absolute; }
+
+.footer__logo {
+  height: 10%;
+  width: 10%;
+  margin: 0;
+  text-align: left;
+  margin-top: 5%;
+  margin-left: -2%;
+  z-index: 10;
+  display: inline-block;
+  position: absolute; }
+
+.footer__layer {
+  min-width: 890px;
+  z-index: 1;
+  text-align: center;
+  margin: 0 auto;
+  height: 140%;
+  position: absolute;
+  background-color: rgba(89, 105, 115, 0.7);
+  top: 0; }
