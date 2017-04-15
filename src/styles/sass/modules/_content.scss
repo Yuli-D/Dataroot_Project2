@@ -1,0 +1,148 @@
+
+
+.price{
+    display: inline-block;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: bolder;
+}
+.offer_price{
+  font-size: 18px;
+  line-height: 100%;
+  color: #4A4A4A;
+}
+.offer_price_us{
+  font-size: 14px;
+  line-height: 24px;
+  color: #9B9B9B;
+  margin-top: 10px;
+
+}
+
+
+.subway_point{
+    width: 100%;
+  font-size: 12px;
+  line-height: 16px;
+
+}
+.subway_point:before{
+   color: red;
+   content: ' \25CF';
+  padding-right: 10px;
+}
+.subway_point_blue{
+  @extend .subway_point;
+}
+.subway_point_blue:before{
+  @extend .subway_point:before;
+  color: blue;
+}
+
+
+.sub_params{
+  display: block;
+  line-height: 16px;
+  font-size: 12px;
+  color:#8C9BA5;
+}
+
+.base_list{
+  margin-top: 24px;
+
+}
+
+.base_list_item{
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 17.09px;
+  padding: 10px 0;
+  margin: 0 20px;
+  margin-bottom: 2px;
+  
+}
+
+
+.choose_type_wrapper{
+  @extend .base_list;
+  margin-bottom: 19px;
+  list-style-type: none;
+}
+.choose_type_item{
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 17px;
+  padding-bottom: 12px;
+  margin-right: 40px;
+}
+
+.list_function_header{
+  margin-top: 30px;
+}
+.list_function{
+  margin-top: 12px;
+  padding-left: 15px;
+}
+.list_function_item{
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 8px 0;
+}
+
+
+.author_and_time{
+  font-size: 12px;
+	font-family: "Open Sans Bold";
+  line-height: 16px;
+  color:#8C9BA5;
+}
+.flat_desc{
+  font-size: 13px;
+  font-size: 20px;
+  color: #000000;
+  margin-top: 10px;
+}
+
+
+
+// second page
+.content_title{
+  font-size: 16px;
+  line-height: 100%;
+  color: #2C74C7;
+}
+
+.nav_way{
+    margin:25px 0;
+      color:#2573D8;
+}
+
+
+.nav_way_item{
+  display: inline-block;
+  font-size: 14px;
+  line-height: 17.09px;
+}
+.flats_header{
+  font-family: "Open Sans";
+  font-size: 20px;
+  line-height: 32px;
+  color:#152935;
+}
+.filter_panel{
+  margin: 25px 0;
+  color:#8C9BA5;
+  font-size: 14 px;
+  line-height: 17.09 px;
+  .amount_flat{
+    @extend .half_section;
+    text-align: left;
+  }
+  .filter_options{
+    @extend .half_section;
+    text-align: right;
+  }
+}
