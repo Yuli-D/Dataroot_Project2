@@ -1,0 +1,139 @@
+// wrappers
+.wrapper{
+  width: 100%;
+}
+
+.offers_wrapper{
+  @extend .wrapper;
+}
+
+%base_section{
+  background-color: #fff;
+  max-width:890px;
+  border-radius: 3px;
+}
+%base_content{
+    padding: 25px 2.2% 40px 2.2%;
+}
+.block_offer{
+  padding: 20px 12px 20px 15px;
+  background-color: #fff;
+  .img_wrapper{
+    vertical-align: top;
+    display: inline-block;
+    width: 31%;
+  }
+  .block_offer_content{
+    display: inline-block;
+    width: 36.48%;
+  }
+  .offer_price_content{
+    display: inline-block;
+    float: right;
+    text-align: right;
+  }
+}
+.content_contacts{
+  margin-top: 15px;
+  .subway_point{
+    display: inline-block;
+  }
+  .author_and_time{
+    display: inline-block;
+  }
+}
+
+
+.base_section_flats_near_metro{
+  @extend %base_section;
+  padding: 25px 3.37% 40px 3.37%;
+}
+
+.base_section_best_offers{
+  @extend %base_section;
+    margin-top: 20px;
+  .base_content{
+    @extend %base_content;
+    text-align: center;
+  }
+}
+.base_section_last_offers{
+  @extend %base_section;
+      margin-top: 20px;
+  .base_content{
+    @extend %base_content;
+    text-align: center;
+  }
+}
+.base_section_communicate_social{
+  margin-top: 60px;
+}
+.base_section_blog{
+  @extend %base_section;
+  .base_content{
+    @extend %base_content;
+    text-align: center;
+  }
+}
+
+.half_section{
+  width: 49.7%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+
+
+
+.offer_item{
+  width: 23.8%;
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: 1%;
+  text-align: left;
+
+  &:last-child{
+    margin-right: 0;
+  }
+  .desc_offer_item{
+    width: 93.5%;
+    margin-top: 20px;
+
+    .params_offer_item{
+      text-align: left;
+      margin-bottom: 12px;
+      font-family: "Open Sans";
+    }
+  }
+
+}
+.blog_item{
+  @extend .offer_item ;
+  width: 32.1%;
+  img{
+    margin-bottom: 20px;
+  }
+}
+
+
+.header_communicate{
+  text-align: center;
+}
+.block_social_telegram{
+  margin: 40px auto;
+}
+.phone_wrapper{
+  @extend .half_section;
+  text-align: center;
+}
+.info_telegram{
+    @extend .half_section;
+  background-color: white;
+  box-sizing: border-box;
+  padding: 53px 4.46%;
+  margin-top: 60px;
+}
+
+.map_wrapper{
+
+}

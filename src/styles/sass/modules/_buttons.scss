@@ -1,0 +1,108 @@
+.btn{
+  cursor: pointer;
+  background-color: #30AE63;
+  font-size: 14px;
+  font-family: "Open Sans Bold";
+  border: none;
+  border-radius: 3px;
+  color: white;
+  text-align: center;
+}
+.btn_large{
+  @extend .btn;
+  letter-spacing: 1px;
+  width: 320px;
+  height: 40px;
+  margin-top: 30px;
+}
+.red_circle{
+  font-size: 120px;
+  color: red !important;
+}
+.btn_extra_grey{
+  width: 100%;
+  padding: 8px 0;
+  border-top: 2px #D8D8D8 solid;
+    cursor: pointer;
+  button{
+        cursor: pointer;
+    width: 100%;
+    border:none;
+    background-color: inherit;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.slider_nav{
+  margin-bottom: 60px;
+  text-align: center;
+}
+.slider_nav_item{
+  display: inline-block;
+  background-color: inherit;
+  width: 10px;
+  height: 10px;
+  border: 2px solid #30AE63;
+  border-radius: 45%;
+  cursor: pointer;
+}
+.offer_price_range{
+    box-sizing: border-box;
+    margin: 20px 0;
+    border-radius: 5px;
+    width: 148px;
+    height: 36px;
+
+    padding: 8px;
+    font-size: 13px;
+    line-height: 100%;
+
+    i{
+      font-size: 9px;
+      color: #fff;
+      background-color: #D8D8D8;
+    }
+}
+.offer_price_range_red{
+  @extend .offer_price_range;
+    color:#D00202;
+    background-color: #FFEFEA;
+}
+.offer_price_range_green{
+  color: #30AD64;
+  background-color: #EAFFF5;
+  @extend .offer_price_range;
+}
+
+
+.square_icon{
+  box-sizing: border-box;
+  display: inline-block;
+  height: 32px;
+  width: 70px;
+  text-align: center;
+  padding-top: 7px;
+  border-radius: 5px;
+}
+.square_icon_phone{
+  border:2px solid #30AE63;
+  @extend .square_icon;
+  i{
+    color: #30AE63;
+  }
+}
+.square_icon_telegram{
+  border:2px solid #2573D8;
+  @extend .square_icon;
+}
+.next_chapture{
+  font-size: 12px;
+  line-height:20px;
+  color: #979797;
+  margin-top: 35px;
+}
+.current_chapture{
+  color: #000000;
+  font-size: 12px;
+  line-height: 20px;
+}
