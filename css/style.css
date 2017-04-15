@@ -530,16 +530,16 @@ body {
 
 @font-face {
   font-family: "Open Sans";
-  src: url("../../src/fonts/OpenSans-Regular.ttf"); }
+  src: url("../fonts/OpenSans-Regular.ttf"); }
 
 @font-face {
   font-family: "Open Sans Light";
-  src: url("../../src/fonts/OpenSans-Light.ttf"); }
+  src: url("../fonts/OpenSans-Light.ttf"); }
 
 @font-face {
   font-family: "Open Sans Bold";
-  src: url("../../src/fonts/OpenSans-Bold.ttf"); }
+  src: url("../fonts/OpenSans-Bold.ttf"); }
 
 @font-face {
   font-family: "Open Sans SemiBold";
-  src: url("../../src/fonts/OpenSans-Semibold.ttf"); }
+  src: url("../fonts/OpenSans-Semibold.ttf"); }
