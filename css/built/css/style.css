@@ -1,0 +1,14 @@
+body {
+  -webkit-resets: none;
+  -moz-resets: none;
+  -ms-resets: none;
+  resets: none; }
+
+.application {
+  width: 80%;
+  position: relative; }
+
+.applicaton__left-side, .application__right-side {
+  display: inline-block;
+  width: 100%;
+  background-color: #30AE63; }
