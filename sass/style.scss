@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+$main-font:'Open Sans',sans-serif;
+$brand-color:#30AE63;
+
+@mixin resets($parameter)
+{
+	  -webkit-resets: $parameter;
+      -moz-resets: $parameter;
+      -ms-resets: $parameter;
+	   resets:$parameter;
+}
+@mixin data-fields()
+{
+	display: inline-block;
+	width: 100%;
+	margin-top: 2%;
+	padding: 3%;
+}
+@mixin checkboxes()
+{
+	cursor: pointer;
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	padding-top: 10px;
+	text-align: center;
+	margin-right: 1%;
+	border-radius: 25px;
+	border:1px solid white;
+}
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body
+{
+	@include resets(none);
+	min-width: 890px;
+	display: inline-block;
+	margin: 0 auto;
+	font-family: $main-font;
+	text-align: center;
+}
+.application
+{
+	display: inline-block;
+	display: none;
+	min-width: 600px;
+	text-align: left;	
+}
+.application__left-side, .application__right-side
+{
+	display: inline-block;
+	padding: 4%;
+	width: 50%;	
+	margin-right: -.25em;
+	background-color:$brand-color;
+	height: 550px;
+	vertical-align: top;
+}
+.application__left-side
+{
+	background-color: #F5F7FA;
+}
+.application__heading
+{
+	padding-bottom: 10%;
+}
+.application__right-side
+{
+	background-color: white;
+}
+.application__link
+{
+	display: inline-block;
+	margin-right: 10%;
+	padding: 3%;
+	padding-top: 0;
+}
+.application__link:first-child
+{
+	border-bottom: 2px solid $brand-color;
+}
+.application__selection-list
+{
+	@include data-fields();
+}
+.application__checkbox-heading
+{
+	margin-top: 4%;
+	margin-bottom: 3%;
+	display: inline-block;
+}
+.header__checkbox-custom
+{
+	@include checkboxes;
+	margin-left: 1%;
+}
+.application__checkbox-custom
+{
+	@include checkboxes;
+	border:1px solid #838D95;
+}
+.checkbox:checked + .application__checkbox-custom
+{
+	background-color: $brand-color;
+}
+.checkbox:checked + .header__checkbox-custom
+{
+	
+	background-color: white;
+	color: #4F5F68;
+}
+.checkbox:checked + .application__checkbox-custom
+{
+	background-color: $brand-color;
+}
+.checkbox
+{
+	
+	display: none;
+}
+
+.application__input
+{
+	@include data-fields();
+	color: dimgray;
+	margin-top: 5%;
+}
+.button
+{
+	@include data-fields();
+	border-style: none;
+	background-color: $brand-color;
+	color: white;
+	margin-top: 10%;
+}
+@import 'header.scss';
+@import 'footer.scss';
