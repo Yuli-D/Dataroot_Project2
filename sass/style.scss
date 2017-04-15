@@ -24,7 +24,7 @@ $brand-color:#30AE63;
 	height: 40px;
 	padding-top: 10px;
 	text-align: center;
-	margin-right: 5%;
+	margin-right: 2%;
 	border-radius: 25px;
 	border:1px solid white;
 }
@@ -95,6 +95,7 @@ body
 .header__checkbox-custom
 {
 	@include checkboxes;
+	margin-left: 1%;
 }
 .application__checkbox-custom
 {

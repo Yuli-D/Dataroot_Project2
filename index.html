@@ -5,6 +5,7 @@
 	</head>
 	<body>
 			<header class="header">
+			
 			<div class="header__logo"><img src="logo.png"></div>
 			<ul class="header__menu menu">
 				<li class="menu__item"><a class="menu__link">Аренда</a></li>
@@ -13,10 +14,10 @@
 				<li class="menu__item"><a class="menu__link">... Ещё</a></li>
 			</ul>
 			<div class="header__announcement">Pазместить объявление</div>
-			<button class="header__authorization" value="Войти">Войти</button>
-			<h1>Поиск недвижимости в Украине</h1>
+			<button class="header__authorization header__button" value="Войти">Войти</button>
+			<h1 class="header__heading">Поиск недвижимости в Украине</h1>
 			<span class="header__subheading">Выберите город</span>
-			<span class="header__subheading">Кол-во комнат</span>
+			<span class="header__subheading">Кол-во комнат</span><br>
 			<select class="header__selection">
 				<option value="Киев" class="header__option">Киев</option>
 				<option value="Одесса" class="header__option">Одесса</option>
@@ -32,7 +33,8 @@
 				<label class="header__checkbox"><input type="checkbox" class="checkbox"><span class="header__checkbox-custom">4</span></label>
 				<label class="header__checkbox"><input type="checkbox" class="checkbox"><span class="header__checkbox-custom">5+</span></label>
 				
-				<button type="submit" value="search">Перейти к поиску</button>
+				<button type="submit" value="search" class="header__button">Перейти к поиску</button>
+			
 		</header>
 		<section class="application">
 			<div class="application__left-side">
