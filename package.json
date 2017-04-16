@@ -1,22 +1,15 @@
 {
-  "name": "dataroot_project2",
+  "name": "css",
   "version": "1.0.0",
-  "description": "Team project ",
-  "main": "index.js",
+  "description": "",
+  "main": "Gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Yuli-D/Dataroot_Project2.git"
-  },
-  "author": "Yuliia Dehtiarova / Oleksii Starovoitenko",
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Yuli-D/Dataroot_Project2/issues"
-  },
-  "homepage": "https://github.com/Yuli-D/Dataroot_Project2#readme",
   "devDependencies": {
-    "gulp": "^3.9.1"
+    "gulp-sass": "^3.1.0",
+    "gulp-watch": "^4.3.11"
   }
 }

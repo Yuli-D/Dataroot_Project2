@@ -1,3 +1,4 @@
+
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 $main-font:'Open Sans',sans-serif;
 $brand-color:#30AE63;
@@ -24,9 +25,14 @@ $brand-color:#30AE63;
 	height: 40px;
 	padding-top: 10px;
 	text-align: center;
-	margin-right: 1%;
+	margin-right: 4%;
 	border-radius: 25px;
 	border:1px solid white;
+}
+a
+{
+	text-decoration: none;
+	color: white;
 }
 *
 {
@@ -38,17 +44,24 @@ body
 {
 	@include resets(none);
 	min-width: 890px;
-	display: inline-block;
-	margin: 0 auto;
+	display: inline-block;	
 	font-family: $main-font;
 	text-align: center;
 }
 .application
 {
 	display: inline-block;
-	display: none;
+	position: relative;
 	min-width: 600px;
 	text-align: left;	
+	background-color: fuchsia;
+}
+.fa
+{
+	position: absolute;
+	right: 2%;
+	top: 2%;
+	font-weight: 100;
 }
 .application__left-side, .application__right-side
 {
@@ -96,6 +109,7 @@ body
 .header__checkbox-custom
 {
 	@include checkboxes;
+	margin-right: 0;
 	margin-left: 1%;
 }
 .application__checkbox-custom
@@ -139,3 +153,14 @@ body
 }
 @import 'header.scss';
 @import 'footer.scss';
+@media screen and(min-width:890px)
+{
+	
+}
+@media screen and(min-width:360px)
+{
+	body 
+	{
+		min-width: 360px;
+	}
+}

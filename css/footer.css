@@ -9,12 +9,12 @@ body {
   text-align: center; }
 
 .footer {
-  margin: 0 auto;
   min-width: 890px;
+  vertical-align: top;
   position: relative;
-  margin: 0 auto;
   display: inline-block;
-  text-align: center; }
+  text-align: center;
+  box-sizing: border-box; }
 
 .footer__link {
   text-decoration: none;
@@ -61,7 +61,7 @@ body {
   position: absolute; }
 
 .footer__layer {
-  min-width: 890px;
+  min-width: 100%;
   z-index: 1;
   text-align: center;
   margin: 0 auto;

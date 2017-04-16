@@ -2,18 +2,20 @@
 	<head>
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="css/style.css" type="text/css">
+		<script src="https://use.fontawesome.com/9737d7f3b7.js"></script>
 	</head>
 	<body>
+		<wrapper class="wrapper">
 			<header class="header">
 			
-			<div class="header__logo"><img src="logo.png"></div>
+				<div class="header__logo"><a href="" class="header__link"><img src="img/logo.png"></a></div>
 			<ul class="header__menu menu">
-				<li class="menu__item"><a class="menu__link">Аренда</a></li>
-				<li class="menu__item"><a class="menu__link">Продажа</a></li>
-				<li class="menu__item"><a class="menu__link">Посуточно</a></li>
-				<li class="menu__item"><a class="menu__link">... Ещё</a></li>
+				<li class="menu__item"><a class="menu__link" href="">Аренда</a></li>
+				<li class="menu__item"><a class="menu__link" href="">Продажа</a></li>
+				<li class="menu__item"><a href="" class="menu__link">Посуточно</a></li>
+				<li class="menu__item"><a href="" class="menu__link">... Ещё</a></li>
 			</ul>
-				<div class="header__announcement announcement">Pазместить объявление<div class="announcement__sign"><img src="Button/Shape.png"></div></div>
+				<div class="header__announcement announcement"><a class="header__link" href="">Pазместить объявление</a><div class="announcement__sign"><img src="img/Button/Shape.png"></div></div>
 			<button class="header__authorization header__button" value="Войти">Войти</button>
 			<h1 class="header__heading">Поиск недвижимости в Украине</h1>
 			<span class="header__subheading">Выберите город</span>
@@ -36,7 +38,9 @@
 				<button type="submit" value="search" class="header__button">Перейти к поиску</button>
 			
 		</header>
+		</wrapper>
 		<section class="application">
+		<i class="fa fa-times fa-lg"></i>
 			<div class="application__left-side">
 			<h2 class="application__heading">Оставить заяку</h2>
 			<p class="application_explanation">								
@@ -72,6 +76,7 @@
 				<button type="submit" class="application__button button">Оставить заявку</button>
 			</div>
 		</section>
+		<div class="wrapper_footer">
 		<footer class="footer">
 			<div class="footer__block">
 				<ul class="footer__menu">
@@ -97,17 +102,18 @@
 				</ul>
 				<ul class="footer__menu">
 					<li class="footer__item"><a class="footer__link" href="">Контакты</a></li>
-					<li class="footer__item"><a href=""><img src="facebook.png" class="footer__link"></a>
-						<a class="footer__link" href=""><img src="vk.png"></a>
-						<a class="footer__link" href=""><img src="instagram.png"></a>
+					<li class="footer__item"><a href=""><img src="img/facebook.png" class="footer__link"></a>
+						<a class="footer__link" href=""><img src="img/vk.png"></a>
+						<a class="footer__link" href=""><img src="img/instagram.png"></a>
 					  </li>
 					<li class="footer__item"><a class="footer__link" href="">ул. Жилянская 37,<br> <span class="footer__detais">Киев 01033</span></a></li>
 					<li class="footer__item"><a class="footer__link" href="">info@metrovka.ua</a></li>
 					<li class="footer__item"><button class="footer__button button">Оставить заявку</button></li>
 				</ul>
 			</div>
-			<div class="footer__logo"><img src="Combined%20Shape.png"></div>
+			<div class="footer__logo"><img src="img/Combined%20Shape.png"></div>
 			<div class="footer__layer"></div>
 		</footer>
+		</div>
 	</body>
 </html>
