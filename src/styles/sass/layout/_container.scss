@@ -1,11 +1,10 @@
-// wrappers
 .wrapper{
   width: 100%;
 }
-
 .offers_wrapper{
   @extend .wrapper;
 }
+
 
 %base_section{
   background-color: #fff;
@@ -15,40 +14,18 @@
 %base_content{
     padding: 25px 2.2% 40px 2.2%;
 }
-.block_offer{
-  padding: 20px 12px 20px 15px;
-  background-color: #fff;
-  .img_wrapper{
-    vertical-align: top;
-    display: inline-block;
-    width: 31%;
-  }
-  .block_offer_content{
-    display: inline-block;
-    width: 36.48%;
-  }
-  .offer_price_content{
-    display: inline-block;
-    float: right;
-    text-align: right;
-  }
-}
-.content_contacts{
-  margin-top: 15px;
-  .subway_point{
-    display: inline-block;
-  }
-  .author_and_time{
-    display: inline-block;
-  }
-}
 
+
+.half_section{
+  width: 49.7%;
+  display: inline-block;
+  vertical-align: top;
+}
 
 .base_section_flats_near_metro{
   @extend %base_section;
   padding: 25px 3.37% 40px 3.37%;
 }
-
 .base_section_best_offers{
   @extend %base_section;
     margin-top: 20px;
@@ -76,12 +53,36 @@
   }
 }
 
-.half_section{
-  width: 49.7%;
-  display: inline-block;
-  vertical-align: top;
+.block_offer{
+  padding: 20px 12px 20px 15px;
+  background-color: #fff;
+  .img_wrapper{
+    vertical-align: top;
+    display: inline-block;
+    width: 31%;
+  }
+  .block_offer_content{
+    display: inline-block;
+    width: 36.48%;
+    	font-family: "Open Sans SemiBold";
+  }
+  .offer_price_content{
+    display: inline-block;
+    float: right;
+    text-align: right;
+    font-family: "Open Sans SemiBold";
+  }
 }
 
+.content_contacts{
+  margin-top: 15px;
+  .subway_point{
+    display: inline-block;
+  }
+  .author_and_time{
+    display: inline-block;
+  }
+}
 
 
 
@@ -115,7 +116,6 @@
   }
 }
 
-
 .header_communicate{
   text-align: center;
 }
@@ -133,7 +133,14 @@
   padding: 53px 4.46%;
   margin-top: 60px;
 }
-
-.map_wrapper{
-
+.filter_item{
+    cursor: pointer;
+    display: inline-block;
+    padding-left: 15px;
+    color: #8C9BA5;
+    font-size: 14px;
+    line-height: 17px;
+    background-color: transparent;
+    border:none;
+    font-family: "Open Sans SemiBold";
 }

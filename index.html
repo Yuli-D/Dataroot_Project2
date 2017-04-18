@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/jquery.selectric.min.js"></script>
+<link rel="stylesheet" href="css/selectric.css">
+<script>
+$(function() {
+  $('select').selectric({
+    disableOnMobile: false,
+     nativeOnMobile: false,
+  });
+});
+    </script>
   </head>
   <body>
     <div class="wrapper">
@@ -19,14 +30,14 @@
           </ul>
 
           <select сlass="dropdown_select">
-            <option class="dropdown_select_option" value="Политехнический институт">
-              <span class="red_circle">&#x25CF;</span>Политехнический институт
+            <option class="dropdown_select_option color_red_first" value="Политехнический институт" >
+              &#x25CF; Политехнический институт
             </option>
-            <option class="dropdown_select_option" value="Святошино">
-              <span class="red_circle">&#x25CF;</span>Святошино
+            <option class="dropdown_select_option color_red_first" value="Святошино">
+                &#x25CF; Святошино
             </option>
-            <option class="dropdown_select_option" value="Петровка">
-              <span class="red_circle">&#x25CF;</span>Петровка
+            <option class="dropdown_select_option color_blue_first" value="Петровка">
+              &#x25CF; Петровка
             </option>
           </select>
           <button class="btn_large">

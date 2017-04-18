@@ -9,3 +9,28 @@
   padding: 6px 6px ;
   margin-left: 24px;
 }
+.square_icon{
+  box-sizing: border-box;
+  display: inline-block;
+  height: 32px;
+  width: 70px;
+  text-align: center;
+  padding-top: 7px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.square_icon_phone{
+  border:2px solid $green;
+  @extend .square_icon;
+  i{
+    color: $green;
+  }
+}
+.square_icon_telegram{
+  border:2px solid #2573D8;
+  @extend .square_icon;
+}
+.red_circle{
+  font-size: 120px;
+  color: red !important;
+}

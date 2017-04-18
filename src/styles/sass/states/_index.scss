@@ -1,13 +1,13 @@
 .choose_type_item:hover{
   font-family: "Open Sans Bold";
-  border-bottom: 2px solid #30AE63;
+  border-bottom: 2px solid $green;
 }
 .choose_type_item_active{
   font-family: "Open Sans Bold";
-  border-bottom: 2px solid #30AE63;
+  border-bottom: 2px solid $green;
 }
 .base_list_item_active{
-  border-bottom: 2px solid #30AE63;
+  border-bottom: 2px solid $green;
   font-family: "Open Sans Bold";
   margin-bottom: 0;
 }
@@ -17,15 +17,24 @@
     margin-bottom: 0;
 }
 .slider_nav_item_active{
-      background-color: #30AE63;
+      background-color: $green;
+}
+.slider_nav_item_active_grey{
+      background-color: #000000;
 }
 
 .color_purple{
   color: #BA8FF7;
 }
 .color_green{
-  color: #30AE63;
+  color: $green;
 }
 .color_blue{
   color: #2573D8;
+}
+.color_red_first::first-letter {
+  color: red;
+}
+.color_blue_first::first-letter{
+  @extend .color_blue;
 }

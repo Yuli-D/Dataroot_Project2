@@ -1,6 +1,6 @@
 .btn{
   cursor: pointer;
-  background-color: #30AE63;
+  background-color: $green;
   font-size: 14px;
   font-family: "Open Sans Bold";
   border: none;
@@ -15,10 +15,7 @@
   height: 40px;
   margin-top: 30px;
 }
-.red_circle{
-  font-size: 120px;
-  color: red !important;
-}
+
 .btn_extra_grey{
   width: 100%;
   padding: 8px 0;
@@ -42,9 +39,17 @@
   background-color: inherit;
   width: 10px;
   height: 10px;
-  border: 2px solid #30AE63;
+  border: 2px solid $green;
   border-radius: 45%;
   cursor: pointer;
+}
+.slider_nav_grey{
+  @extend .slider_nav;
+}
+.slider_nav_item_grey{
+  @extend .slider_nav_item;
+   background-color: #D8D8D8;
+     border: 2px solid #D8D8D8;
 }
 .offer_price_range{
     box-sizing: border-box;
@@ -67,42 +72,27 @@
   @extend .offer_price_range;
     color:#D00202;
     background-color: #FFEFEA;
+    	font-family: "Open Sans Bold";
 }
 .offer_price_range_green{
-  color: #30AD64;
+  color: $green;
   background-color: #EAFFF5;
   @extend .offer_price_range;
 }
 
 
-.square_icon{
-  box-sizing: border-box;
-  display: inline-block;
-  height: 32px;
-  width: 70px;
-  text-align: center;
-  padding-top: 7px;
-  border-radius: 5px;
-}
-.square_icon_phone{
-  border:2px solid #30AE63;
-  @extend .square_icon;
-  i{
-    color: #30AE63;
-  }
-}
-.square_icon_telegram{
-  border:2px solid #2573D8;
-  @extend .square_icon;
-}
+
 .next_chapture{
+  cursor: pointer;
   font-size: 12px;
   line-height:20px;
   color: #979797;
   margin-top: 35px;
+  font-family: "Open Sans SemiBold";
 }
 .current_chapture{
   color: #000000;
   font-size: 12px;
   line-height: 20px;
+    font-family: "Open Sans SemiBold";
 }

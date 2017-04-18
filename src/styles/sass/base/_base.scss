@@ -1,6 +1,8 @@
 //styles for tags
 body{
-  color: #152935;
+  color: $black;
+  background-color: #5A6872;
+  font-family: "Open Sans";
 }
 h2{
   font-size: 24px;
@@ -12,21 +14,19 @@ p{
   font-family: "Open Sans";
   font-size: 14px;
   line-height: 20px;
-  color:#152935;
+  color:$black;
   margin-top: 20px;
   line-height: 20px;
   font-size: 14px;
 }
 h4{
-  color: #152935;
+  color: $black;
   font-size: 16px;
   line-height: 24px;
+  font-family: "Open Sans SemiBold";
 }
 h5{
   font-size: 11px;
   line-height: 16px;
-}
-body{
-  font-family: "Open Sans";
-  background-color: #5A6872;
+  	font-family: "Open Sans Bold";
 }
