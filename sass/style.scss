@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 $main-font:'Open Sans',sans-serif;
 $brand-color:#30AE63;
-
+$content-color:#4F5F68;
 @mixin resets($parameter)
 {
 	  -webkit-resets: $parameter;
@@ -54,7 +54,6 @@ body
 	position: relative;
 	min-width: 600px;
 	text-align: left;	
-	background-color: fuchsia;
 }
 .fa
 {
@@ -91,6 +90,7 @@ body
 	margin-right: 10%;
 	padding: 3%;
 	padding-top: 0;
+    color: $content-color;
 }
 .application__link:first-child
 {
@@ -109,8 +109,8 @@ body
 .header__checkbox-custom
 {
 	@include checkboxes;
-	margin-right: 0;
-	margin-left: 1%;
+	margin-right: 5%;
+
 }
 .application__checkbox-custom
 {
@@ -152,15 +152,107 @@ body
 	margin-top: 10%;
 }
 @import 'header.scss';
-@import 'footer.scss';
-@media screen and(min-width:890px)
+@import 'footer.scss'; 
+ @media screen and(max-width:890px)
 {
-	
-}
-@media screen and(min-width:360px)
-{
-	body 
+	*
+	{
+		box-sizing: border-box;
+	}
+//	body
+//	{
+//		min-width: 360px;
+//	  
+//	}
+	.wrapper
 	{
 		min-width: 360px;
 	}
+	.header
+	{
+//		min-width: 360px;
+		text-align: left;
+		padding: 5%;
+	}
+	.header__heading
+	{
+		padding: 0;
+		margin-left: 0;
+		font-size: 200%;
+		font-weight: normal;
+	}
+	.header__subheading
+	{
+		font-size: 100%;
+	}
+	.header__menu
+	{
+		min-width: 20%;
+		margin-top: 0;
+        margin-left: 5%;
+	}
+	
+	.menu__item,.announcement,.header__authorization
+	{
+		display: none;
+	}
+	.header__block
+	{
+		display: block;
+		min-width: 360px;
+		margin-top: 8%;
+	}
+	.header__button
+	{
+		margin-top: 8%;
+		width: 50%;
+		padding: 3%;
+		font-size: 110%;
+		margin-left: 0;
+	}
+	.menu__item:first-child
+	{
+
+		display: block;
+		padding: 8% 10%;
+		font-size:120%;
+	}
+	.footer
+	{
+		min-width: 360px;
+		height: 160%;	
+		display: inline-block;
+		text-align: center;
+	}
+.footer__menu
+  {
+min-width: 360px;
+	  text-align: center;
+display: block;
+	}
+
+.logo__wrapper
+{
+display: inline-block;
+text-align: center;
+}
+.footer__logo
+{
+display: inline-block;
+margin-top: 15%;
+margin-left: -10%;
+}
+	.footer__layer
+	{
+		height: 80em;
+	}
+	.footer__button
+	{
+		display: inline-block;
+		left: 10%;
+	}
+}
+.wrapper
+{
+	background-color: fuchsia;
 }

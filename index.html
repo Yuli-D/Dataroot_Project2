@@ -18,8 +18,8 @@
 				<div class="header__announcement announcement"><a class="header__link" href="">Pазместить объявление</a><div class="announcement__sign"><img src="img/Button/Shape.png"></div></div>
 			<button class="header__authorization header__button" value="Войти">Войти</button>
 			<h1 class="header__heading">Поиск недвижимости в Украине</h1>
-			<span class="header__subheading">Выберите город</span>
-			<span class="header__subheading">Кол-во комнат</span><br>
+			<div class="header__block">
+			<span class="header__subheading">Выберите город</span><br>
 			<select class="header__selection">
 				<option value="Киев" class="header__option">Киев</option>
 				<option value="Одесса" class="header__option">Одесса</option>
@@ -27,6 +27,9 @@
 				<option value="Днепропетровск" class="header__option">Днепропетровск</option>
 				<option value="Львов" class="header__option">Львов</option>
 				</select>
+				</div>
+				<div class="header__block">
+			    <span class="header__subheading">Кол-во комнат</span><br>
 												<label class="header__checkbox"><input type="checkbox" checked  class="checkbox">
 				<span class="header__checkbox-custom">1</span>
 				</label>
@@ -34,7 +37,7 @@
 				<label class="header__checkbox"><input type="checkbox" class="checkbox"><span class="header__checkbox-custom">3</span></label>
 				<label class="header__checkbox"><input type="checkbox" class="checkbox"><span class="header__checkbox-custom">4</span></label>
 				<label class="header__checkbox"><input type="checkbox" class="checkbox"><span class="header__checkbox-custom">5+</span></label>
-				
+				</div>
 				<button type="submit" value="search" class="header__button">Перейти к поиску</button>
 			
 		</header>
@@ -111,7 +114,9 @@
 					<li class="footer__item"><button class="footer__button button">Оставить заявку</button></li>
 				</ul>
 			</div>
+			<div class="logo__wrapper">
 			<div class="footer__logo"><img src="img/Combined%20Shape.png"></div>
+			</div>
 			<div class="footer__layer"></div>
 		</footer>
 		</div>

@@ -15,22 +15,31 @@ body {
   min-width: 890px; }
 
 .header__heading {
-  font-size: 150%;
+  font-size: 200%;
+  font-weight: normal;
   margin-top: 5%;
   text-align: left;
-  padding-left: 4%;
+  padding-left: 2%;
   margin-bottom: 5%; }
 
-.header__subheading {
+.header__block {
   display: inline-block;
-  float: left;
-  padding-left: 4%;
+  text-align: left;
+  width: 35%;
+  padding: 0; }
+
+.header__block:nth-child(2) {
+  text-align: center; }
+
+.header__subheading {
+  margin-bottom: 3%;
   font-size: 75%;
-  margin-right: 24%; }
+  display: inline-block; }
 
 .header__selection {
-  width: 34%;
-  padding: 1%;
+  width: 90%;
+  padding: 3%;
+  margin: 0;
   margin-right: 2%; }
 
 * {
@@ -46,6 +55,7 @@ body {
 .header__menu {
   min-width: 50%;
   white-space: nowrap;
+  position: relative;
   display: inline-block;
   text-align: center; }
 
