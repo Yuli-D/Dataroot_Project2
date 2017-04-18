@@ -6,6 +6,9 @@ body {
 .header__logo {
   display: inline-block; }
 
+.header__submenu {
+  display: none; }
+
 .header {
   background-color: #30AE63;
   color: white;

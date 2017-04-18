@@ -11,6 +11,10 @@ body
 	display: inline-block;	
 	
 }
+.header__submenu
+{
+	display: none;
+}
 .header
 {
 	background-color: $brand-color;
