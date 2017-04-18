@@ -302,9 +302,12 @@ body {
 @media screen and (max-width: 890px) {
   * {
     box-sizing: border-box; }
+  body {
+    min-width: 360px; }
   .wrapper {
     min-width: 360px; }
   .header {
+    min-width: 360px;
     text-align: left;
     padding: 5%; }
   .header__heading {
