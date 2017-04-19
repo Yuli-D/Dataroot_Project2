@@ -13,9 +13,10 @@ body {
   -moz-resets: none;
   -ms-resets: none;
   resets: none;
-  min-width: 890px;
+  font-family: 'Open Sans',sans-serif; }
+
+.wrapper {
   display: inline-block;
-  font-family: "Open Sans", sans-serif;
   text-align: center; }
 
 .application {
@@ -305,8 +306,6 @@ body {
 @media screen and (max-width: 890px) {
   * {
     box-sizing: border-box; }
-  body {
-    min-width: 360px; }
   .wrapper {
     min-width: 360px; }
   .header {
