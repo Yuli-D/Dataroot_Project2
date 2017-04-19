@@ -43,9 +43,11 @@ a
 body
 {
 	@include resets(none);
-	min-width: 890px;
+	font-family: 'Open Sans',sans-serif;
+}
+.wrapper
+{
 	display: inline-block;	
-	font-family: $main-font;
 	text-align: center;
 }
 .application
@@ -158,11 +160,6 @@ body
 	*
 	{
 		box-sizing: border-box;
-	}
-	body
-	{
-		min-width: 360px;
-	  
 	}
 	.wrapper
 	{
